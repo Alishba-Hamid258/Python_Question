@@ -1,0 +1,7 @@
+''' Q4. Min-Max in Three Find the minimum and maximum out of three numbers. 
+Input: 3 7 2 
+Output: Min: 2, Max: 7 '''
+
+num= list(map(int, input("ENTER THE NUMBERS: ").split()))
+print(f'Maximum out of 3: {max(num)}')
+print(f'Minimum out of 3: {min(num)}')

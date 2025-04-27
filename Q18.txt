@@ -1,0 +1,20 @@
+'''Q18. Most Frequent Element Return the most frequent element from a list. If tie, return the 
+smallest. 
+Input: [1, 3, 2, 2, 3, 1, 3] 
+Output: 3'''
+
+numlist = list(map(int, input("Enter a list of numbers: ").split()))  
+numdict = {}  
+
+for i in numlist:
+    if i in numdict:
+        numdict[i] += 1
+    else:
+        numdict[i] = 1
+
+
+max_freq = max(numdict.values())
+most_frequent = min(k for k, v in numdict.items() if v == max_freq)
+
+print("Frequency Dictionary:", numdict)
+print("Most Frequent Element:", most_frequent)

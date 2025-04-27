@@ -1,0 +1,11 @@
+'''Q20. Character Distance Given a string and a target character, return a list of distances from 
+each character to the closest occurrence of the target. 
+Input: String: "loveleetcode", Target: "e" 
+Output: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]'''
+
+
+s = input("Enter a string: ")  
+target = input("Enter the target character: ")  
+positions = [i for i in range(len(s)) if s[i] == target] 
+distances = [min((i - pos) if i >= pos else (pos - i) for pos in positions) for i in range(len(s))] 
+print(distances)

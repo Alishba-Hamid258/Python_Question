@@ -1,0 +1,18 @@
+'''Q12. Dict Key FilterGiven a dictionary of names and ages, return keys (names) of people over 18. 
+Input: {"Ali": 20, "Sara": 17, "Omar": 19} 
+Output: ["Ali", "Omar"] '''
+
+xdict = {}  
+while True:
+    key = input("Enter key (or type 'exit' to stop): ")
+    if key.lower() == "exit":
+        break  
+
+    value = input("Enter value: ")
+    xdict[key] = int(value)  
+
+print("Dictionary:", xdict)
+
+
+y = [k for k, v in xdict.items() if v > 18]
+print("Keys with values > 18:", y)

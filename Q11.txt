@@ -1,0 +1,12 @@
+'''Q11. Letter Frequency MapReturn a dictionary with the frequency of each character in a string. 
+Input: "apple" 
+Output: {'a': 1, 'p': 2, 'l': 1, 'e': 1} '''
+
+numlist=input("Enter a list of number: ")
+numdict={}
+for i in numlist:
+    if i in numdict:
+        numdict[i] += 1
+    else:
+        numdict[i] = 1
+print(numdict)

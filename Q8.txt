@@ -1,0 +1,13 @@
+'''Q8. Element Frequency Given a list of integers, count how many times each element 
+appears. 
+Input: [1, 2, 2, 3, 1, 4, 2] 
+Output: {1: 2, 2: 3, 3: 1, 4: 1} '''
+
+numlist=list(map(int,input("Enter a list of number: ").split()))
+numdict={}
+for i in numlist:
+    if i in numdict:
+        numdict[i] += 1
+    else:
+        numdict[i] = 1
+print(numdict)

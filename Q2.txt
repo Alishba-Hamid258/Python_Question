@@ -1,0 +1,7 @@
+'''Q2. Reverse CaseTake a string and reverse the case of all characters. 
+Input: "PyThOn" 
+Output: "pYtHoN" '''
+
+word=input("Enter any word : ")
+reverse=word.swapcase()
+print(reverse)

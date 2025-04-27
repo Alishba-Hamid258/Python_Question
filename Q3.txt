@@ -1,0 +1,9 @@
+''' Q3. Lucky Number Check If a number is divisible by 7 and ends with 7, print "Lucky!", else " Try again".
+Input: 77 
+Output: Lucky! '''
+
+num=int(input("Enter your lucky number: "))
+if num % 7 == 0 and num % 10 == 7:
+    print("LUCKY NUMBER")
+else:
+    print("TRY AGAIN")

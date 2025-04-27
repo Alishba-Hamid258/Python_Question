@@ -1,0 +1,9 @@
+'''Q15. Longest Word FinderReturn the longest word from a given sentence. 
+Input: "AI makes life easier and faster" 
+Output: "easier" '''
+
+sentence = input("Enter a sentence: ")  
+words = sentence.split()  
+longestword = max(words, key=len)  
+
+print("Longest word:", longestword)

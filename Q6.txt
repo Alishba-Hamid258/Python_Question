@@ -1,0 +1,9 @@
+'''Q6. Char Index Finder Given a string and a character, return all indices where the character appears. 
+Input: String: "programming", Char: "g" 
+Output: [3, 10] '''
+
+word=input("input a word: ")
+print (word)
+char=input("input the character from your word: ")
+ind=[i for i, x in enumerate(word) if x == char]
+print(ind)

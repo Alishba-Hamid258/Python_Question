@@ -1,0 +1,29 @@
+'''Q17. Balanced BracketsCheck if the string has balanced brackets ()[]{}, properly nested. 
+Input: "{[()]}" 
+Output: True'''
+
+
+brackets = input("Enter a string: ") 
+count_round = count_square = count_curly = 0 
+
+for char in brackets:
+    if char == '(':
+        count_round += 1
+    elif char == ')':
+        count_round -= 1
+    elif char == '[':
+        count_square += 1
+    elif char == ']':
+        count_square -= 1
+    elif char == '{':
+        count_curly += 1
+    elif char == '}':
+        count_curly -= 1
+
+   
+    if count_round < 0 or count_square < 0 or count_curly < 0:
+        print(False)
+        break
+else:
+    print(count_round == 0 and count_square == 0 and count_curly == 0)
+

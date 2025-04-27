@@ -1,0 +1,10 @@
+'''Q1. Digit Sum Puzzle Write a program to take a 2-digit number and return the sum of its digits. 
+Input: 47 
+Output: 11 '''
+
+num=list(map(int, input("Enter the number:").split()))
+sum=0
+for i in range(len(num)):
+    sum = sum + num[i]
+    i += 1
+print(sum)

@@ -1,0 +1,8 @@
+Q9. Unique Elements OnlyReturn a list with only unique elements, preserving original order. 
+Input: [1, 2, 2, 3, 1] 
+Output: [1, 2, 3] 
+
+x=list(map(int,input("Enter a list of number: ").split()))
+y=set(x)
+z=list(y)
+print(z)

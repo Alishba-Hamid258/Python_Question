@@ -1,0 +1,19 @@
+'''Q21. Print Diamond Pattern Dynamically (30 Marks)Write a program that prints a diamond 
+pattern of stars '*' based on an odd number of rows. 
+Input: 5 
+Output: 
+* 
+*** 
+***** 
+*** 
+*'''
+
+n = int(input("Enter an odd number: "))  
+
+if n % 2 == 0:
+    print("Please enter an odd number!")  
+else:
+    for i in range(1, n + 1, 2):  
+        print(" " * ((n - i) // 2) + "*" * i)
+    for i in range(n - 2, 0, -2):
+        print(" " * ((n - i) // 2) + "*" * i)

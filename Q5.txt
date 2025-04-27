@@ -1,0 +1,14 @@
+Q5. Conditional Operation Given a number, return double if even, triple if odd. 
+Input: 6 
+Output: 12
+
+num = int (input("enter a number: "))
+
+if num % 2 == 0:
+
+    	evendouble = num * 2
+	print (f'{evendouble} is an Even number {num} double.')
+
+else:
+    	oddtriple = num * 3 
+    	print (f'{oddtriple} is an odd number {num} triple.')

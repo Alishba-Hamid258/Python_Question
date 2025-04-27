@@ -1,0 +1,15 @@
+'''Q16. Palindrome IndexFind the index of the first character that breaks the palindrome. If already a palindrome, return -1. 
+Input: "abca" 
+Output: 1'''
+
+s = input("Enter a string: ")  
+n = len(s)
+
+
+if s == s[::-1]:
+    print(-1)
+else:
+    for i in range(n // 2):
+        if s[i] != s[n - i - 1]: 
+            print(i)
+            break
